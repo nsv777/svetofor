@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mRelativeLayout = (RelativeLayout)findViewById();
+        mRelativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
     }
 
 
@@ -39,6 +39,13 @@ public class MainActivity extends Activity {
     }
 
     public void clickButtonRed(View view) {
-
+        mRelativeLayout.setBackgroundColor(getResources().getColor(R.color.colorRed));
     }
+    public void clickButtonGreen(View view) {
+        mRelativeLayout.setBackgroundColor(getResources().getColor(R.color.colorGreen));
+    }
+    public void clickButtonYellow(View view) {
+        mRelativeLayout.setBackgroundColor(getResources().getColor(R.color.colorYellow));
+    }
+
 }
