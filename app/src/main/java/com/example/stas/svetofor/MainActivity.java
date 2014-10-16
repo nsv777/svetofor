@@ -1,6 +1,7 @@
 package com.example.stas.svetofor;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -48,4 +49,9 @@ public class MainActivity extends Activity {
         mRelativeLayout.setBackgroundColor(getResources().getColor(R.color.colorYellow));
     }
 
+    public void clickAbout(MenuItem item) {
+        Intent intent;
+        intent = new Intent(MainActivity.this, AboutActivity.class);
+        startActivity(intent);
+    }
 }

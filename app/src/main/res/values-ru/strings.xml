@@ -6,4 +6,5 @@
     <string name="buttonTitleRed">Красный</string>
     <string name="buttonTitleYellow">Жёлтый</string>
     <string name="buttonTitleGreen">Зелёный</string>
+    <string name="about_title">О программе</string>
 </resources>
